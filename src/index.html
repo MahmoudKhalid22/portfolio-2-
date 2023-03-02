@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./input.css" />
+    <title>Mahmoud Khalid</title>
+  </head>
+  <body>
+    <nav class="h-12 z-10">
+      <div
+        class="bg-[#fffafa] flex justify-between items-center z-10 shadow-lg w-full fixed p-4"
+      >
+        <button class="open">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-10 h-10"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+            />
+          </svg>
+        </button>
+        <a href="#home" class="logo text-2xl font-bold text-[#cc4b2c]"
+          >Mahmoud</a
+        >
+      </div>
+      <ul
+        class="menu fixed top-0 bg-[#cc4b2c] text-[#fffafa] h-screen w-[20rem] z-10 flex justify-center text-left ite flex-col overflow-hidden p-12 transition-all -left-full"
+      >
+        <li class="text-lg font-semibold block my-4">
+          <a
+            class="link text-md uppercase texttt-[#fffafa] font-bold hover:text-[#54423D] transition"
+            href="#home"
+          >
+            Home
+          </a>
+        </li>
+        <li class="text-lg font-semibold block my-4">
+          <a
+            class="link text-md uppercase texttt-[#fffafa] font-bold hover:text-[#54423D] transition"
+            href="#about"
+          >
+            About
+          </a>
+        </li>
+        <li class="text-lg font-semibold block my-4">
+          <a
+            class="link text-md uppercase texttt-[#fffafa] font-bold hover:text-[#54423D] transition"
+            href="#skills"
+          >
+            Skills
+          </a>
+        </li>
+        <li class="text-lg font-semibold block my-4">
+          <a
+            class="link text-md uppercase texttt-[#fffafa] font-bold hover:text-[#54423D] transition"
+            href="#services"
+          >
+            Services
+          </a>
+        </li>
+        <li class="text-lg font-semibold block my-4">
+          <a
+            class="link text-md uppercase texttt-[#fffafa] font-bold hover:text-[#54423D] transition"
+            href="#works"
+          >
+            Works
+          </a>
+        </li>
+        <li class="text-lg font-semibold block my-4">
+          <a
+            class="link text-md uppercase texttt-[#fffafa] font-bold hover:text-[#54423D] transition"
+            href="#contact"
+          >
+            Contact
+          </a>
+        </li>
+        <button
+          class="close absolute top-8 right-8 bg-[#fffafa] text-[#cc4b2c] p-1 rounded"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-6 h-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M6 18L18 6M6 6l12 12"
+            />
+          </svg>
+        </button>
+      </ul>
+    </nav>
+    <main>
+      <section class="home" id="home">
+        <div class="home_container flex justify-center items-center">
+          <div class="home_data flex flex-col items-center text-center">
+            <div
+              class="home_image pt-5 pl-3 w-40 h-40 bg-[#cc4b2c] rounded-full overflow-hidden mb-5"
+            >
+              <img
+                src="imgs/my-image-removebg-preview.png"
+                class="w-[12rem] h-[12rem] relative -left-[10px]"
+                alt="my image"
+              />
+            </div>
+            <h1 class="text-2xl text-[#cc4b2c] font-semibold">
+              Mahmoud Khalid
+            </h1>
+            <p class="text-sm text-[#662616] font-semibold mb-10">
+              Frontend Developer
+            </p>
+            <div class="home_social mb-20">
+              <a
+                href="#"
+                class="inline-flex bg-[#cc4b2c] text-[#fffafa] text-lg rounded-full p-2 mx-2 transition-colors hover:bg-[#662616]"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a
+                href="#"
+                class="inline-flex bg-[#cc4b2c] text-[#fffafa] text-lg rounded-full p-2 mx-2 transition-colors hover:bg-[#662616]"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <a
+                href="#"
+                class="inline-flex bg-[#cc4b2c] text-[#fffafa] text-lg rounded-full p-2 mx-2 transition-colors hover:bg-[#662616]"
+                ><i class="fa-brands fa-whatsapp"></i
+              ></a>
+              <a
+                href="#"
+                class="inline-flex bg-[#cc4b2c] text-[#fffafa] text-lg rounded-full p-2 mx-2 transition-colors hover:bg-[#662616]"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a
+                href="#"
+                class="inline-flex bg-[#cc4b2c] text-[#fffafa] text-lg rounded-full p-2 mx-2 transition-colors hover:bg-[#662616]"
+                ><i class="fa-brands fa-behance"></i
+              ></a>
+            </div>
+            <a
+              href="#"
+              class="inline-block bg-[#cc4b2c] py-4 px-8 text-[#fffafa] font-semibold rounded-lg transition-colors hover:bg-[#662616] w-full"
+              >Download Resume</a
+            >
+          </div>
+        </div>
+      </section>
+      <section class="about p-4" id="about">
+        <span class="section-subtitle">My intro</span>
+        <h2 class="section-title text-5xl font-bold">About me</h2>
+        <div class="gap-8">
+          <div class="about_data text-center">
+            <p class="about_description mb-4 text-xl md:text-2xl">
+              Hi, I'm Frontend developer, passionate about creating and
+              developing web interfaces. I have experience in this area of work
+              , with multiple quality projects.
+            </p>
+            <img
+              src="imgs/my-image-removebg-preview.png"
+              alt="my image"
+              class="w-40 object-cover rounded-lg mx-auto border border-black bg-black"
+            />
+          </div>
+          <!-- 01 -->
+          <div class="mb-4">
+            <h1 class="text-2xl text-[#662616] mb-2">Information</h1>
+            <div class="flex items-center pl-6 mb-3 gap-4">
+              <i class="fa-regular fa-user text-2xl text-[#cc4b2c] mr-4"></i>
+              <span class="block font-semibold">Mahmoud Khalid</span>
+            </div>
+            <div class="flex items-center pl-6 mb-3 gap-4">
+              <i class="fa-solid fa-phone text-2xl text-[#cc4b2c] mr-4"></i>
+              <span class="block font-semibold">+201229086941</span>
+            </div>
+            <div class="flex items-center pl-6 mb-3 gap-4">
+              <i
+                class="fa-regular fa-envelope text-2xl text-[#cc4b2c] mr-4"
+              ></i>
+              <span class="block font-semibold">mahmoud0122549@gmail.com</span>
+            </div>
+          </div>
+          <!-- 02 -->
+          <div class="mb-4">
+            <h3 class="about_information_title">Experience and support</h3>
+            <!-- 01 -->
+            <div class="about_information_data">
+              <i class="fa-solid fa-medal"></i>
+              <div>
+                <span class="subtitle">5 year Job</span>
+                <span class="subtitle-small">Experience</span>
+              </div>
+            </div>
+            <!-- 02 -->
+            <div class="about_information_data">
+              <i class="fa-solid fa-briefcase"></i>
+              <div>
+                <span class="subtitle">50+ Projects</span>
+                <span class="subtitle-small">Completed</span>
+              </div>
+            </div>
+            <!-- 03 -->
+            <div class="about_information_data">
+              <i class="fa-solid fa-headset"></i>
+              <div>
+                <span class="subtitle">Support</span>
+                <span class="subtitle-small">Online 24/7</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

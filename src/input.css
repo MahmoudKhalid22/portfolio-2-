@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --heder-height: 3rem;
+  --nav-width: 324px;
+  /* colors */
+  --fisrt-color: #cc4b2c;
+  --fisrt-color-dark: #662616;
+  --fisrt-color-darker: #290f09;
+  --text-color: #54423d;
+  --fisrt-color-light: #eae7e6;
+  --fisrt-color-lighter: #fffafa;
+  /* ==== font family ==== */
+  --body-font: "Poppins", sans-serif;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1rem;
+  --normal-font-size: 0.938rem;
+  --small-font-size: 0.813rem;
+  --smaller-font-size: 0.75rem;
+}
+.section {
+  padding: 4rem 0 2rem;
+}
+
+.section-title {
+  font-size: var(--h1-font-size);
+  color: var(--fisrt-color);
+  margin-bottom: 1rem;
+  text-align: center;
+  font-size: 2rem;
+}
+.section-subtitle {
+  /* text-sm text-[#b88072] font-semibold mb-10 */
+  display: block;
+  font-size: 0.875rem;
+  color: var(--fisrt-color-darker);
+  font-weight: 600;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+* {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  font-family: var(--body-font);
+}
+body {
+  margin: 0;
+  /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif; */
+  font-family: var(--body-font);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* font-size: var(--normal-font-size); */
+  background-color: var(--fisrt-color-lighter);
+  color: var(--text-color);
+  line-height: 1.6;
+  height: 4000px;
+}
+.menu {
+  transition: 0.7s;
+  /* transition-duration: 1s; */
+}
+.hide {
+  left: -100%;
+  /* transition: 0.7s; */
+}
+.active {
+  color: var(--text-color);
+}
+.home_container {
+  height: calc(100vh - var(--heder-height));
+}
