@@ -5,14 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/all.min.css" />
-    <link href="/dist/output.css" rel="stylesheet" />
+    <!-- <link href="/dist/output.css" rel="stylesheet" /> -->
+    <link rel="stylesheet" href="./build.css" />
     <link rel="stylesheet" href="./input.css" />
+    <link rel="icon" href="./logo.png" />
     <title>Mahmoud Khalid</title>
   </head>
   <body>
     <nav class="h-12 z-10">
       <div
-        class="bg-[#fffafa] flex justify-between items-center z-10 shadow-lg w-full fixed p-4"
+        class="bg-[#fffafa] flex justify-between items-center z-10 shadow-lg w-full fixed py-2 px-8"
       >
         <button class="open">
           <svg
@@ -35,7 +37,7 @@
         >
       </div>
       <ul
-        class="menu fixed top-0 bg-[#cc4b2c] text-[#fffafa] h-screen w-[20rem] z-10 flex justify-center text-left ite flex-col overflow-hidden p-12 transition-all -left-full"
+        class="menu fixed top-0 left-0 bg-[#cc4b2c] text-[#fffafa] h-screen w-[15rem] sm:w-[20rem] z-10 flex justify-center text-left ite flex-col overflow-hidden p-12 transition-all"
       >
         <li class="text-lg font-semibold block my-4">
           <a
@@ -106,7 +108,8 @@
       </ul>
     </nav>
     <main>
-      <section class="home" id="home">
+      <!-- Home -->
+      <section class="home section p-8" id="home">
         <div class="home_container flex justify-center items-center">
           <div class="home_data flex flex-col items-center text-center">
             <div
@@ -126,67 +129,66 @@
             </p>
             <div class="home_social mb-20">
               <a
-                href="#"
+                href="https://www.linkedin.com/in/mahmoud-khalid-abusamra/"
+                target="_blank"
                 class="inline-flex bg-[#cc4b2c] text-[#fffafa] text-lg rounded-full p-2 mx-2 transition-colors hover:bg-[#662616]"
                 ><i class="fa-brands fa-linkedin"></i
               ></a>
               <a
-                href="#"
+                href="https://github.com/MahmoudKhalid22"
+                target="_blank"
                 class="inline-flex bg-[#cc4b2c] text-[#fffafa] text-lg rounded-full p-2 mx-2 transition-colors hover:bg-[#662616]"
                 ><i class="fa-brands fa-github"></i
               ></a>
               <a
-                href="#"
+                href="https://wa.me/+201229086941"
+                target="_blank"
                 class="inline-flex bg-[#cc4b2c] text-[#fffafa] text-lg rounded-full p-2 mx-2 transition-colors hover:bg-[#662616]"
                 ><i class="fa-brands fa-whatsapp"></i
               ></a>
-              <a
-                href="#"
-                class="inline-flex bg-[#cc4b2c] text-[#fffafa] text-lg rounded-full p-2 mx-2 transition-colors hover:bg-[#662616]"
-                ><i class="fa-brands fa-facebook"></i
-              ></a>
-              <a
-                href="#"
-                class="inline-flex bg-[#cc4b2c] text-[#fffafa] text-lg rounded-full p-2 mx-2 transition-colors hover:bg-[#662616]"
-                ><i class="fa-brands fa-behance"></i
-              ></a>
             </div>
             <a
-              href="#"
+              href="https://github.com/MahmoudKhalid22/Kalbonyan-Elmarsos/raw/main/CV/cv.pdf"
+              target="_blank"
               class="inline-block bg-[#cc4b2c] py-4 px-8 text-[#fffafa] font-semibold rounded-lg transition-colors hover:bg-[#662616] w-full"
               >Download Resume</a
             >
           </div>
         </div>
       </section>
-      <section class="about p-4" id="about">
+      <!-- ABOUT -->
+      <section class="about section p-8" id="about">
         <span class="section-subtitle">My intro</span>
         <h2 class="section-title text-5xl font-bold">About me</h2>
         <div class="gap-8">
-          <div class="about_data text-center">
+          <div class="about_data text-center mb-8">
             <p class="about_description mb-4 text-xl md:text-2xl">
               Hi, I'm Frontend developer, passionate about creating and
               developing web interfaces. I have experience in this area of work
               , with multiple quality projects.
             </p>
-            <img
-              src="imgs/my-image-removebg-preview.png"
-              alt="my image"
-              class="w-40 object-cover rounded-lg mx-auto border border-black bg-black"
-            />
+            <div class="bg-[#863f2e] inline-block rounded-lg max-w-[22rem]">
+              <img
+                src="imgs/mine-4-removebg.png"
+                alt="my image"
+                class="rounded-lg mx-auto border object-contain border-red-700 bg-transparent"
+              />
+            </div>
           </div>
           <!-- 01 -->
           <div class="mb-4">
             <h1 class="text-2xl text-[#662616] mb-2">Information</h1>
-            <div class="flex items-center pl-6 mb-3 gap-4">
+            <div class="flex items-center pl-6 mb-3">
               <i class="fa-regular fa-user text-2xl text-[#cc4b2c] mr-4"></i>
               <span class="block font-semibold">Mahmoud Khalid</span>
             </div>
-            <div class="flex items-center pl-6 mb-3 gap-4">
+            <div class="flex items-center pl-6 mb-3">
               <i class="fa-solid fa-phone text-2xl text-[#cc4b2c] mr-4"></i>
-              <span class="block font-semibold">+201229086941</span>
+              <span class="block font-semibold phone_number"
+                >+201229086941</span
+              >
             </div>
-            <div class="flex items-center pl-6 mb-3 gap-4">
+            <div class="flex items-center pl-6 mb-3">
               <i
                 class="fa-regular fa-envelope text-2xl text-[#cc4b2c] mr-4"
               ></i>
@@ -195,32 +197,650 @@
           </div>
           <!-- 02 -->
           <div class="mb-4">
-            <h3 class="about_information_title">Experience and support</h3>
+            <h3 class="text-2xl text-[#662616] mb-2">Experience and support</h3>
             <!-- 01 -->
-            <div class="about_information_data">
-              <i class="fa-solid fa-medal"></i>
+            <div class="flex items-center pl-6 mb-3">
+              <i class="fa-solid fa-medal text-2xl text-[#cc4b2c] mr-4"></i>
               <div>
-                <span class="subtitle">5 year Job</span>
+                <span class="block font-semibold">Junior Frontend</span>
                 <span class="subtitle-small">Experience</span>
               </div>
             </div>
             <!-- 02 -->
-            <div class="about_information_data">
-              <i class="fa-solid fa-briefcase"></i>
+            <div class="flex items-center pl-6 mb-3">
+              <i class="fa-solid fa-briefcase text-2xl text-[#cc4b2c] mr-4"></i>
               <div>
-                <span class="subtitle">50+ Projects</span>
+                <span class="block font-semibold">+15 Projects</span>
                 <span class="subtitle-small">Completed</span>
               </div>
             </div>
             <!-- 03 -->
-            <div class="about_information_data">
-              <i class="fa-solid fa-headset"></i>
+            <div class="flex items-center pl-6 mb-3">
+              <i class="fa-solid fa-headset text-2xl text-[#cc4b2c] mr-4"></i>
               <div>
-                <span class="subtitle">Support</span>
+                <span class="block font-semibold">Support</span>
                 <span class="subtitle-small">Online 24/7</span>
               </div>
             </div>
           </div>
+        </div>
+      </section>
+      <!-- SKILLS -->
+      <section class="skills section p-8" id="skills">
+        <span class="section-subtitle">Why Choose me</span>
+        <h2 class="section-title text-5xl font-bold">My expertise Area</h2>
+        <div class="skills_container">
+          <!-- 01 -->
+          <div class="skills_content flex justify-center flex-wrap">
+            <!-- <h3 class="skills_subtitle">Frontend</h3> -->
+            <!-- 01 -->
+            <div
+              class="skills_data text-xl font-semibold relative flex flex-col my-0 mx-4 mb-5 mt-4 items-center"
+            >
+              <span class="skills_name uppercase">Html</span>
+              <div class="skills_icon p-4 rounded-full border-4 border-red-700">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-12 h-12"
+                  viewBox="0 0 256 256"
+                >
+                  <g fill="none">
+                    <rect width="256" height="256" fill="#E14E1D" rx="60" />
+                    <path
+                      fill="#fff"
+                      d="m48 38l8.61 96.593h110.71l-3.715 41.43l-35.646 9.638l-35.579-9.624l-2.379-26.602H57.94l4.585 51.281l65.427 18.172l65.51-18.172l8.783-98.061H85.824l-2.923-32.71h122.238L208 38H48Z"
+                    />
+                    <path
+                      fill="#EBEBEB"
+                      d="M128 38H48l8.61 96.593H128v-31.938H85.824l-2.923-32.71H128V38Zm0 147.647l-.041.014l-35.579-9.624l-2.379-26.602H57.94l4.585 51.281l65.427 18.172l.049-.014v-33.227Z"
+                    />
+                  </g>
+                </svg>
+              </div>
+            </div>
+            <!-- 02 -->
+            <div
+              class="text-xl font-semibold relative flex flex-col my-0 mx-4 mb-5 mt-4 items-center"
+            >
+              <span class="skills_name uppercase">CSS</span>
+              <div class="skills_icon p-4 rounded-full border-4 border-red-700">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-12 w-12"
+                  viewBox="0 0 32 32"
+                >
+                  <path
+                    fill="#1572b6"
+                    d="M5.902 27.201L3.656 2h24.688l-2.249 25.197L15.985 30L5.902 27.201z"
+                  />
+                  <path
+                    fill="#33a9dc"
+                    d="m16 27.858l8.17-2.265l1.922-21.532H16v23.797z"
+                  />
+                  <path
+                    fill="#fff"
+                    d="M16 13.191h4.09l.282-3.165H16V6.935h7.75l-.074.829l-.759 8.518H16v-3.091z"
+                  />
+                  <path
+                    fill="#ebebeb"
+                    d="m16.019 21.218l-.014.004l-3.442-.93l-.22-2.465H9.24l.433 4.853l6.331 1.758l.015-.004v-3.216z"
+                  />
+                  <path
+                    fill="#fff"
+                    d="m19.827 16.151l-.372 4.139l-3.447.93v3.216l6.336-1.756l.047-.522l.537-6.007h-3.101z"
+                  />
+                  <path
+                    fill="#ebebeb"
+                    d="M16.011 6.935v3.091H8.545l-.062-.695l-.141-1.567l-.074-.829h7.743zM16 13.191v3.091h-3.399l-.062-.695l-.14-1.567l-.074-.829H16z"
+                  />
+                </svg>
+              </div>
+            </div>
+            <!-- 03 -->
+            <div
+              class="text-xl font-semibold relative flex flex-col my-0 mx-4 mb-5 mt-4 items-center"
+            >
+              <span class="skills_name uppercase">Tailwindcss</span>
+              <div class="skills_icon p-4 rounded-full border-4 border-red-700">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-12 h-12"
+                  viewBox="0 0 256 154"
+                >
+                  <defs>
+                    <linearGradient
+                      id="logosTailwindcssIcon0"
+                      x1="-2.778%"
+                      x2="100%"
+                      y1="32%"
+                      y2="67.556%"
+                    >
+                      <stop offset="0%" stop-color="#2298BD" />
+                      <stop offset="100%" stop-color="#0ED7B5" />
+                    </linearGradient>
+                  </defs>
+                  <path
+                    fill="url(#logosTailwindcssIcon0)"
+                    d="M128 0C93.867 0 72.533 17.067 64 51.2C76.8 34.133 91.733 27.733 108.8 32c9.737 2.434 16.697 9.499 24.401 17.318C145.751 62.057 160.275 76.8 192 76.8c34.133 0 55.467-17.067 64-51.2c-12.8 17.067-27.733 23.467-44.8 19.2c-9.737-2.434-16.697-9.499-24.401-17.318C174.249 14.743 159.725 0 128 0ZM64 76.8C29.867 76.8 8.533 93.867 0 128c12.8-17.067 27.733-23.467 44.8-19.2c9.737 2.434 16.697 9.499 24.401 17.318C81.751 138.857 96.275 153.6 128 153.6c34.133 0 55.467-17.067 64-51.2c-12.8 17.067-27.733 23.467-44.8 19.2c-9.737-2.434-16.697-9.499-24.401-17.318C110.249 91.543 95.725 76.8 64 76.8Z"
+                  />
+                </svg>
+              </div>
+            </div>
+            <!-- 04 -->
+            <div
+              class="text-xl font-semibold relative flex flex-col my-0 mx-4 mb-5 mt-4 items-center"
+            >
+              <span class="skills_name uppercase">Javascript</span>
+              <div class="skills_icon p-4 rounded-full border-4 border-red-700">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-12 h-12"
+                  viewBox="0 0 256 256"
+                >
+                  <path fill="#F7DF1E" d="M0 0h256v256H0V0Z" />
+                  <path
+                    d="m67.312 213.932l19.59-11.856c3.78 6.701 7.218 12.371 15.465 12.371c7.905 0 12.89-3.092 12.89-15.12v-81.798h24.057v82.138c0 24.917-14.606 36.259-35.916 36.259c-19.245 0-30.416-9.967-36.087-21.996m85.07-2.576l19.588-11.341c5.157 8.421 11.859 14.607 23.715 14.607c9.969 0 16.325-4.984 16.325-11.858c0-8.248-6.53-11.17-17.528-15.98l-6.013-2.58c-17.357-7.387-28.87-16.667-28.87-36.257c0-18.044 13.747-31.792 35.228-31.792c15.294 0 26.292 5.328 34.196 19.247l-18.732 12.03c-4.125-7.389-8.591-10.31-15.465-10.31c-7.046 0-11.514 4.468-11.514 10.31c0 7.217 4.468 10.14 14.778 14.608l6.014 2.577c20.45 8.765 31.963 17.7 31.963 37.804c0 21.654-17.012 33.51-39.867 33.51c-22.339 0-36.774-10.654-43.819-24.574"
+                  />
+                </svg>
+              </div>
+            </div>
+            <!-- 05 -->
+            <div
+              class="text-xl font-semibold relative flex flex-col my-0 mx-4 mb-5 mt-4 items-center"
+            >
+              <span class="skills_name uppercase">Api</span>
+              <div class="skills_icon p-4 rounded-full border-4 border-red-700">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-12 h-12"
+                  viewBox="0 0 24 24"
+                >
+                  <path fill="currentColor" d="M13.26 10.5h2v1h-2z" />
+                  <path
+                    fill="currentColor"
+                    d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2ZM8.4 15L8 13.77H6.06L5.62 15H4l2.2-6h1.62L10 15Zm8.36-3.5a1.47 1.47 0 0 1-1.5 1.5h-2v2h-1.5V9h3.5a1.47 1.47 0 0 1 1.5 1.5ZM20 15h-1.5V9H20Z"
+                  />
+                  <path
+                    fill="currentColor"
+                    d="M6.43 12.77h1.16l-.58-1.59l-.58 1.59z"
+                  />
+                </svg>
+              </div>
+            </div>
+            <!-- 06 -->
+            <div
+              class="text-xl font-semibold relative flex flex-col my-0 mx-4 mb-5 mt-4 items-center"
+            >
+              <span class="skills_name uppercase">Reactjs</span>
+              <div class="skills_icon p-4 rounded-full border-4 border-red-700">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-12 h-12"
+                  viewBox="0 0 32 32"
+                >
+                  <circle cx="16" cy="15.974" r="2.5" fill="#00d8ff" />
+                  <path
+                    fill="#00d8ff"
+                    d="M16 21.706a28.385 28.385 0 0 1-8.88-1.2a11.3 11.3 0 0 1-3.657-1.958A3.543 3.543 0 0 1 2 15.974c0-1.653 1.816-3.273 4.858-4.333A28.755 28.755 0 0 1 16 10.293a28.674 28.674 0 0 1 9.022 1.324a11.376 11.376 0 0 1 3.538 1.866A3.391 3.391 0 0 1 30 15.974c0 1.718-2.03 3.459-5.3 4.541a28.8 28.8 0 0 1-8.7 1.191Zm0-10.217a27.948 27.948 0 0 0-8.749 1.282c-2.8.977-4.055 2.313-4.055 3.2c0 .928 1.349 2.387 4.311 3.4A27.21 27.21 0 0 0 16 20.51a27.6 27.6 0 0 0 8.325-1.13C27.4 18.361 28.8 16.9 28.8 15.974a2.327 2.327 0 0 0-1.01-1.573a10.194 10.194 0 0 0-3.161-1.654A27.462 27.462 0 0 0 16 11.489Z"
+                  />
+                  <path
+                    fill="#00d8ff"
+                    d="M10.32 28.443a2.639 2.639 0 0 1-1.336-.328c-1.432-.826-1.928-3.208-1.327-6.373a28.755 28.755 0 0 1 3.4-8.593a28.676 28.676 0 0 1 5.653-7.154a11.376 11.376 0 0 1 3.384-2.133a3.391 3.391 0 0 1 2.878 0c1.489.858 1.982 3.486 1.287 6.859a28.806 28.806 0 0 1-3.316 8.133a28.385 28.385 0 0 1-5.476 7.093a11.3 11.3 0 0 1-3.523 2.189a4.926 4.926 0 0 1-1.624.307Zm1.773-14.7a27.948 27.948 0 0 0-3.26 8.219c-.553 2.915-.022 4.668.75 5.114c.8.463 2.742.024 5.1-2.036a27.209 27.209 0 0 0 5.227-6.79a27.6 27.6 0 0 0 3.181-7.776c.654-3.175.089-5.119-.713-5.581a2.327 2.327 0 0 0-1.868.089A10.194 10.194 0 0 0 17.5 6.9a27.464 27.464 0 0 0-5.4 6.849Z"
+                  />
+                  <path
+                    fill="#00d8ff"
+                    d="M21.677 28.456c-1.355 0-3.076-.82-4.868-2.361a28.756 28.756 0 0 1-5.747-7.237a28.676 28.676 0 0 1-3.374-8.471a11.376 11.376 0 0 1-.158-4A3.391 3.391 0 0 1 8.964 3.9c1.487-.861 4.01.024 6.585 2.31a28.8 28.8 0 0 1 5.39 6.934a28.384 28.384 0 0 1 3.41 8.287a11.3 11.3 0 0 1 .137 4.146a3.543 3.543 0 0 1-1.494 2.555a2.59 2.59 0 0 1-1.315.324Zm-9.58-10.2a27.949 27.949 0 0 0 5.492 6.929c2.249 1.935 4.033 2.351 4.8 1.9c.8-.465 1.39-2.363.782-5.434A27.212 27.212 0 0 0 19.9 13.74a27.6 27.6 0 0 0-5.145-6.64c-2.424-2.152-4.39-2.633-5.191-2.169a2.327 2.327 0 0 0-.855 1.662a10.194 10.194 0 0 0 .153 3.565a27.465 27.465 0 0 0 3.236 8.1Z"
+                  />
+                </svg>
+              </div>
+            </div>
+            <!-- 05 -->
+            <!-- <div class="skills_data relative flex justify-between my-0 mx-4 mb-5">
+              <span class="skills_name">Html/css</span>
+              <i></i>
+              <i></i>
+            </div> -->
+          </div>
+          <!-- 01 -->
+          <!-- <div class="skills_content">
+            <h3 class="skills_subtitle">Backend</h3>
+            <!-- 01 -->
+          <!-- <div class="skills_data">
+              <span class="skills_name">Nodejs</span>
+              <i></i>
+              <i></i>
+            </div> -->
+          <!-- 02 -->
+          <!-- <div class="skills_data">
+              <span class="skills_name">Express</span>
+              <i></i>
+              <i></i>
+            </div> -->
+          <!-- 03 -->
+          <!-- <div class="skills_data">
+              <span class="skills_name">Mongodb</span>
+              <i></i>
+              <i></i>
+            </div> -->
+          <!-- 04 -->
+          <!-- <div class="skills_data">
+              <span class="skills_name">Firebase</span>
+              <i></i>
+              <i></i>
+            </div> -->
+          <!-- 05 -->
+          <!-- <div class="skills_data">
+              <span class="skills_name">Html/css</span>
+              <i></i>
+              <i></i>
+            </div> -->
+        </div>
+        <!-- </div> -->
+      </section>
+      <!-- EDUCATION -->
+      <section class="education section p-8">
+        <span class="section-subtitle">Qualification</span>
+        <h2 class="section-title text-5xl font-bold mb-8">My Education</h2>
+        <div class="education_container gap-8">
+          <div class="education_content">
+            <div>
+              <h3 class="education_year text-lg font-bold text-right">
+                2019 - 2024
+              </h3>
+              <span class="education_univarsity block text-sm text-right"
+                >Zagazig University(CSE)</span
+              >
+            </div>
+            <div class="education_time px-4 justify-self-center">
+              <span
+                class="education_rounder relative inline-block w-3 h-3 rounded-full bg-[#cc4b2c]"
+              ></span>
+              <span
+                class="education_line block h-[90%] w-0.5 bg-[#cc4b2c] translate-x-[5px] -translate-y-1"
+              ></span>
+            </div>
+            <div>
+              <h3 class="education_race mb-1 text-lg font-bold w-48">
+                Intership development `Kalbonian Elmarsos`
+              </h3>
+              <span class="education_univarsity block text-sm">Frontend</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- SERVICES -->
+      <section class="services section p-8" id="services">
+        <span class="section-subtitle">What I Offer</span>
+        <h2 class="section-title text-5xl font-bold mb-8">My Services</h2>
+        <div class="flex justify-center">
+          <div class="services_container items-center justify-center gap-8">
+            <!-- 01 -->
+            <div
+              class="services_content h-[22rem] flex flex-col items-center justify-center border-2 border-[#cc4b2c] text-[#cc4b2c] cursor-pointer rounded-lg py-6 px-2 text-center hover:bg-[#cc4b2c] hover:text-[#fffafa]"
+            >
+              <i
+                class="fa-solid fa-code text-[2rem] p-2 bg-[#cc4b2c] text-[#fffafa] mb-4 service_icon"
+              ></i>
+              <h3
+                class="service_title font-semibold text-xl text-[#662616] mb-2"
+              >
+                Website Development
+              </h3>
+              <p class="service_description">
+                Our website development services focus on creating high-quality,
+                responsive websites that help your customers find the
+                information they need and take actions.
+              </p>
+            </div>
+            <!-- 02 -->
+            <div
+              class="services_content h-[22rem] flex flex-col items-center justify-center border-2 border-[#cc4b2c] text-[#cc4b2c] transition-all cursor-pointer rounded-lg py-8 px-2 text-center hover:bg-[#cc4b2c] hover:text-[#fffafa]"
+            >
+              <i
+                class="fa-solid fa-code bg-[#cc4b2c] text-[#fffafa] text-md service_icon p-2 mb-4 text-[2rem]"
+              ></i>
+              <h3
+                class="service_title font-semibold text-xl text-[#662616] mb-2"
+              >
+                Custom Solutions
+              </h3>
+              <p class="service_description">
+                We use modern web development techniques to ensure that your
+                website is fast, secure, and easy to use on all devices.
+              </p>
+            </div>
+            <!-- 03 -->
+            <div
+              class="services_content h-[22rem] flex flex-col items-center justify-center border-2 border-[#cc4b2c] text-[#cc4b2c] transition-all cursor-pointer rounded-lg py-6 px-2 text-center hover:bg-[#cc4b2c] hover:text-[#fffafa]"
+            >
+              <i
+                class="fa-solid fa-code bg-[#cc4b2c] text-[#fffafa] text-md service_icon p-2 mb-4 text-[2rem]"
+              ></i>
+              <h3
+                class="service_title font-semibold text-xl text-[#662616] mb-2"
+              >
+                Our Process
+              </h3>
+              <p class="service_description">
+                We follow a tried-and-true methodology that ensures that your
+                project is completed on time, on budget, and to your
+                satisfaction.
+              </p>
+            </div>
+            <!-- 04 -->
+            <div
+              class="services_content h-[22rem] flex flex-col items-center justify-center border-2 border-[#cc4b2c] text-[#cc4b2c] transition-all cursor-pointer rounded-lg py-6 px-2 text-center hover:bg-[#cc4b2c] hover:text-[#fffafa]"
+            >
+              <i
+                class="fa-solid fa-code bg-[#cc4b2c] text-[#fffafa] text-md service_icon p-2 mb-4 text-[2rem]"
+              ></i>
+              <h3
+                class="service_title font-semibold text-xl text-[#662616] mb-2"
+              >
+                Maintenance and Support
+              </h3>
+              <p class="service_description">
+                Once your website or web application is up and running, we'll
+                provide ongoing maintenance and support to keep it running
+                smoothly.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- PROJECTS -->
+      <section class="projects section p-8 bg-[#cc4b2c] pb-0">
+        <div class="works_container gap-8">
+          <!-- 01 -->
+          <div class="project_data text-center">
+            <h2 class="text-4xl mb-8 project_title text-[#fffafa]">
+              Do you have a project in mind
+            </h2>
+            <p
+              class="project_description font-semibold mb-8 block text-[#fffafa]"
+            >
+              If you have a project that you want to carry out, do not hesitate
+              and tell me what it is, and what services I can offer you, contact
+              me directly here.
+            </p>
+            <a
+              href="#contact"
+              class="bg-[#fffafa] hover:bg-[#662616] py-4 px-8 rounded-lg transition-colors text-xl font-semibold mt-8 text-[#cc4b2c] hover:text-[#fffafa] shadow-xl"
+              >Contact Me</a
+            >
+          </div>
+          <img
+            src="./imgs/my-image-removebg-preview.png"
+            alt="project-image"
+            class="w-[220px] mx-auto mt-8 border border-[#fffafa] rounded-xl"
+          />
+        </div>
+      </section>
+      <section class="works section p-8" id="works">
+        <span class="section-subtitle">My Portfolio</span>
+        <h2 class="section-title text-5xl font-bold mb-8">Recent Works</h2>
+        <div
+          class="works_container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-items-center gap-8"
+        >
+          <!-- 01 -->
+          <div class="work_img shadow-lg relative overflow-hidden rounded-lg">
+            <img
+              src="./imgs/photo_2022-06-11_16-01-22.jpg"
+              class="w-[20rem] h-[18rem] object-cover"
+              alt="project-image"
+            />
+            <div
+              class="work_data rounded-lg absolute top-0 left-0 w-full h-full bg-[rgba(204,75,44,0.7)] flex flex-col justify-center items-center"
+            >
+              <a
+                href="https://omnifood-mahmoudkhalid.netlify.app/"
+                target="_blank"
+                class="works_link inline-flex text-2xl bg-[#fffafa] text-[#cc4b2c] p-2 mb-6 rounded-xl demo"
+                ><i class="fa-solid fa-link"></i
+              ></a>
+              <a
+                href="https://github.com/MahmoudKhalid22/Omnifood"
+                target="_blank"
+                class="works_link inline-flex text-2xl bg-[#fffafa] text-[#cc4b2c] p-2 mb-6 rounded-xl demo"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <span class="text-xl font-semibold text-[#fffafa]">Work 1</span>
+            </div>
+          </div>
+          <!-- 02 -->
+          <div class="work_img shadow-lg relative overflow-hidden rounded-lg">
+            <img
+              src="./imgs/landing.jpg"
+              class="w-[20rem] h-[18rem] object-cover"
+              alt="project-image"
+            />
+            <div
+              class="work_data rounded-lg absolute top-0 left-0 w-full h-full bg-[rgba(204,75,44,0.7)] flex flex-col justify-center items-center"
+            >
+              <a
+                href="https://tempone-mahmoud.netlify.app/"
+                target="_blank"
+                class="works_link inline-flex text-2xl bg-[#fffafa] text-[#cc4b2c] p-2 mb-6 rounded-xl demo"
+                ><i class="fa-solid fa-link"></i
+              ></a>
+              <a
+                href="https://github.com/MahmoudKhalid22/template-one"
+                target="_blank"
+                class="works_link inline-flex text-2xl bg-[#fffafa] text-[#cc4b2c] p-2 mb-6 rounded-xl demo"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <span class="text-xl font-semibold text-[#fffafa]">Work 2</span>
+            </div>
+          </div>
+          <!-- 03 -->
+          <div class="work_img shadow-lg relative overflow-hidden rounded-lg">
+            <img
+              src="./imgs/template-2.png"
+              class="w-[20rem] h-[18rem] object-cover"
+              alt="project-image"
+            />
+            <div
+              class="work_data rounded-lg absolute top-0 left-0 w-full h-full bg-[rgba(204,75,44,0.7)] flex flex-col justify-center items-center"
+            >
+              <a
+                href="https://mahmoudkhalid22.github.io/template-2/"
+                target="_blank"
+                class="works_link inline-flex text-2xl bg-[#fffafa] text-[#cc4b2c] p-2 mb-6 rounded-xl demo"
+                ><i class="fa-solid fa-link"></i
+              ></a>
+              <a
+                href="https://github.com/MahmoudKhalid22/template-2"
+                target="_blank"
+                class="works_link inline-flex text-2xl bg-[#fffafa] text-[#cc4b2c] p-2 mb-6 rounded-xl demo"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <span class="text-xl font-semibold text-[#fffafa]">Work 3</span>
+            </div>
+          </div>
+          <!-- 04 -->
+          <div class="work_img shadow-lg relative overflow-hidden rounded-lg">
+            <img
+              src="./imgs/template-3.png"
+              class="w-[20rem] h-[18rem] object-cover"
+              alt="project-image"
+            />
+            <div
+              class="work_data rounded-lg absolute top-0 left-0 w-full h-full bg-[rgba(204,75,44,0.7)] flex flex-col justify-center items-center"
+            >
+              <a
+                href="https://mahmoudkhalid22.github.io/template-3/"
+                target="_blank"
+                class="works_link inline-flex text-2xl bg-[#fffafa] text-[#cc4b2c] p-2 mb-6 rounded-xl demo"
+                ><i class="fa-solid fa-link"></i
+              ></a>
+              <a
+                href="https://github.com/MahmoudKhalid22/template-3"
+                target="_blank"
+                class="works_link inline-flex text-2xl bg-[#fffafa] text-[#cc4b2c] p-2 mb-6 rounded-xl demo"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <span class="text-xl font-semibold text-[#fffafa]">Work 4</span>
+            </div>
+          </div>
+          <!-- 05 -->
+          <div class="work_img shadow-lg relative overflow-hidden rounded-lg">
+            <img
+              src="./imgs/ecommerce.png"
+              class="w-[20rem] h-[18rem] object-cover"
+              alt="project-image"
+            />
+            <div
+              class="work_data rounded-lg absolute top-0 left-0 w-full h-full bg-[rgba(204,75,44,0.7)] flex flex-col justify-center items-center"
+            >
+              <a
+                href="https://ecommerce-mkhalid.netlify.app/"
+                target="_blank"
+                class="works_link inline-flex text-2xl bg-[#fffafa] text-[#cc4b2c] p-2 mb-6 rounded-xl demo"
+                ><i class="fa-solid fa-link"></i
+              ></a>
+              <a
+                href="https://github.com/MahmoudKhalid22/Ecommerce-tailwindcss"
+                target="_blank"
+                class="works_link inline-flex text-2xl bg-[#fffafa] text-[#cc4b2c] p-2 mb-6 rounded-xl demo"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <span class="text-xl font-semibold text-[#fffafa]">Work 6</span>
+            </div>
+          </div>
+
+          <!-- 06 -->
+          <div class="work_img shadow-lg relative overflow-hidden rounded-lg">
+            <img
+              src="./imgs/social.png"
+              class="w-[20rem] h-[18rem] object-cover"
+              alt="project-image"
+            />
+            <div
+              class="work_data rounded-lg absolute top-0 left-0 w-full h-full bg-[rgba(204,75,44,0.7)] flex flex-col justify-center items-center"
+            >
+              <a
+                href="https://social-app-mkhalid.netlify.app/"
+                target="_blank"
+                class="works_link inline-flex text-2xl bg-[#fffafa] text-[#cc4b2c] p-2 mb-6 rounded-xl demo"
+                ><i class="fa-solid fa-link"></i
+              ></a>
+              <a
+                href="https://github.com/MahmoudKhalid22/social-project"
+                target="_blank"
+                class="works_link inline-flex text-2xl bg-[#fffafa] text-[#cc4b2c] p-2 mb-6 rounded-xl demo"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <span class="text-xl font-semibold text-[#fffafa]">Work 5</span>
+            </div>
+          </div>
+        </div>
+        <a href="projects.html">
+          <button
+            class="py-2 px-6 bg-[#cc4b2c] text-[#fffafa] border-none text-center font-semibold block rounded-lg mx-auto mt-8 hover:bg-[#662616] transition-all"
+          >
+            Show more projects
+          </button>
+        </a>
+      </section>
+      <section class="contact section p-8" id="contact">
+        <span class="section-subtitle">Contact Me</span>
+        <h2 class="section-title text-5xl font-bold mb-8">Get in Touch</h2>
+        <div
+          class="contact_container md:flex justify-between items-center flex-row-reverse"
+        >
+          <form action="" class="contact_form mx-8 md:flex-[2] w-full">
+            <div class="contact_inputs">
+              <input
+                type="text"
+                placeholder="Name"
+                class="contact_input w-[90%] md:w-full block p-4 outline-none border-none bg-[#eae7e6] text-sm mb-4 rounded-lg"
+              />
+              <input
+                type="mail"
+                placeholder="Email"
+                class="contact_input w-[90%] md:w-full block p-4 outline-none border-none bg-[#eae7e6] text-sm mb-4 rounded-lg"
+              />
+            </div>
+            <input
+              type="text"
+              placeholder="Project"
+              class="contact_input w-[90%] md:w-full block p-4 outline-none border-none bg-[#eae7e6] text-sm mb-4 rounded-lg"
+            />
+            <textarea
+              name=""
+              id=""
+              cols="0"
+              rows="10"
+              placeholder="Message"
+              class="contact_input w-[90%] md:w-full block p-4 outline-none border-none bg-[#eae7e6] text-sm mb-4 rounded-lg"
+            ></textarea>
+            <input
+              type="submit"
+              value="Send Message"
+              class="contact_button outline-none border-none text-[0.938rem] inline-block bg-[#cc4b2c] py-2 px-4 cursor-pointer text-[#fffafa] font-semibold rounded-lg transition-colors hover:bg-[#662616]"
+            />
+          </form>
+          <div class="info_container md:flex-1">
+            <!-- 01 -->
+            <div class="contact_info my-6 mx-8">
+              <h3
+                class="contact_subtitle text-[#662616] mb-2 font-semibold text-base"
+              >
+                Call me
+              </h3>
+              <span class="contact_text block pl-4">+201229086941</span>
+              <span class="contact_text block pl-4">+201225491003</span>
+            </div>
+            <!-- 02 -->
+            <div class="contact_info mb-6 mx-8">
+              <h3
+                class="contact_subtitle text-[#662616] mb-2 font-semibold text-base"
+              >
+                E-mail
+              </h3>
+              <span class="contact_text block pl-4"
+                >mahmoud0122549@gmail.com</span
+              >
+            </div>
+            <!-- 03 -->
+            <div class="contact_info mb-6 mx-8">
+              <h3
+                class="contact_subtitle text-[#662616] mb-2 font-semibold text-base"
+              >
+                Location
+              </h3>
+              <span class="contact_text block pl-4">Egypt - Sharqia</span>
+              <span class="contact_text block pl-4">Zagazig</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="footer bg-[#290f09] text-[#fffafa] text-center section p-8"
+      >
+        <div class="footer_container">
+          <h1 class="footer_title text-5xl font-bold mb-6">Mahmoud</h1>
+          <p class="footer_description mb-6">
+            I'm Mahmoud and this is my personal website, consult me here.
+          </p>
+          <div class="footer_social mb-12">
+            <a
+              href=""
+              class="footer_link inline-flex bg-[#cc4b2c] text-[#fffafa] text-lg rounded-full p-2 mx-2 transition-colors hover:bg-[#fffafa] hover:text-[#cc4b2c]"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+            <a
+              href=""
+              class="footer_link inline-flex bg-[#cc4b2c] text-[#fffafa] text-lg rounded-full p-2 mx-2 transition-colors hover:bg-[#fffafa] hover:text-[#cc4b2c]"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+            <a
+              href=""
+              class="footer_link inline-flex bg-[#cc4b2c] text-[#fffafa] text-lg rounded-full p-2 mx-2 transition-colors hover:bg-[#fffafa] hover:text-[#cc4b2c]"
+              ><i class="fa-brands fa-whatsapp"></i
+            ></a>
+          </div>
+          <p class="text-sm text-[#54423d]">All rights reserved</p>
         </div>
       </section>
     </main>

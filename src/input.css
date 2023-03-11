@@ -22,13 +22,13 @@
   --smaller-font-size: 0.75rem;
 }
 .section {
-  padding: 4rem 0 2rem;
+  padding: 4rem 2rem 2rem;
 }
 
 .section-title {
   font-size: var(--h1-font-size);
   color: var(--fisrt-color);
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   text-align: center;
   font-size: 2rem;
 }
@@ -38,7 +38,7 @@
   font-size: 0.875rem;
   color: var(--fisrt-color-darker);
   font-weight: 600;
-  margin-bottom: 1rem;
+  margin-bottom: 0.75rem;
   text-align: center;
 }
 
@@ -59,7 +59,7 @@ body {
   background-color: var(--fisrt-color-lighter);
   color: var(--text-color);
   line-height: 1.6;
-  height: 4000px;
+ 
 }
 .menu {
   transition: 0.7s;
@@ -67,11 +67,100 @@ body {
 }
 .hide {
   left: -100%;
-  /* transition: 0.7s; */
+  transition: 0.7s;
 }
 .active {
   color: var(--text-color);
 }
 .home_container {
   height: calc(100vh - var(--heder-height));
+}
+.phone_number {
+  letter-spacing: 0.5px;
+}
+.education_content {
+  display: grid;
+  grid-template-columns: 1fr max-content 1fr;
+}
+.education_rounder::before {
+  content: "";
+  position: absolute;
+  transform: translate(-4px, -4px);
+  width: 20px;
+  height: 20px;
+  border: 1px solid var(--fisrt-color);
+  border-radius: 50%;
+}
+.services_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+@media (min-width: 1442px) {
+  .services_container {
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  }
+}
+.service_icon {
+  border-radius: 50%;
+}
+.services_content,
+.service_icon,
+.service_title,
+.service_description {
+  transition: 0.5s;
+}
+.service_description {
+  font-size: 1.25rem;
+  /* line-height: 2rem; */
+  /* letter-spacing: 1px; */
+}
+.services_content:hover .service_icon {
+  background-color: var(--fisrt-color-lighter);
+  color: var(--fisrt-color);
+}
+.services_content:hover .service_title {
+  color: var(--fisrt-color-light);
+}
+.services_content:hover .service_description {
+  color: var(--fisrt-color-lighter);
+}
+.work_data {
+  transition: 0.3s;
+  transform: translateY(100%);
+}
+.work_img:hover .work_data {
+  transform: translateY(0);
+  cursor: pointer;
+}
+.contact_input::placeholder {
+  color: var(--fisrt-color);
+  font-family: var(--body-font);
+  font-weight: 500;
+}
+.contact_button {
+  font-family: var(--body-font);
+}
+
+/* QUIERIES */
+
+@media (max-width: 380px) {
+  .education_race {
+    width: auto;
+  }
+}
+@media (max-width: 350px) {
+}
+/* FOR PROJECTS PAGE */
+.btn.active{
+  background-color: var(--fisrt-color);
+  color: var(--fisrt-color-lighter);
+
+}
+
+.javascript.active{
+  display: flex;
+  transition: 0.3s;
+}
+.reactjs.active{
+  display: flex;
 }
